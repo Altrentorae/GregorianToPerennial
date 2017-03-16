@@ -32,78 +32,33 @@ namespace GregorianToPerennial
         {
             string y = "";
             x = x % 7;
+            if(q)
+            {
+                x++;
+            }
             switch(x)
             {
                 case 1:
-                    if (q)
-                    {
-                        y = "Monday";
-                    }
-                    else
-                    {
-                        y = "Sunday";
-                    }
+                    y = "Sunday";
                     break;
                 case 2:
-                    if (q)
-                    {
-                        y = "Tuesday";
-                    }
-                    else
-                    {
-                        y = "Monday";
-                    }
-                    break;
+                    y = "Monday";
+                    break;                  
                 case 3:
-                    if (q)
-                    {
-                        y = "Wednesday";
-                    }
-                    else
-                    {
-                        y = "Tuesday";
-                    }
+                    y = "Tuesday";
                     break;
                 case 4:
-                    if (q)
-                    {
-                        y = "Thursday";
-                    }
-                    else
-                    {
-                        y = "Wednesday";
-                    }
+                    y = "Wednesday";
                     break;
                 case 5:
-                    if (q)
-                    {
-                        y = "Friday";
-                    }
-                    else
-                    {
-                        y = "Thursday";
-                    }
+                    y = "Thursday";
                     break;
                 case 6:
-                    if (q)
-                    {
-                        y = "Saturday";
-                    }
-                    else
-                    {
-                        y = "Friday";
-                    }
+                    y = "Friday";
                     break;
                 case 0:
-                    if (q)
-                    {
-                        y = "Sunday";
-                    }
-                    else
-                    {
-                        y = "Saturday";
-                    }
-                    break; 
+                    y = "Saturday";
+                    break;
             }
             return y;
         }
